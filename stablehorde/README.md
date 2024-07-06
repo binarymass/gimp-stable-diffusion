@@ -7,7 +7,8 @@ Please check HISTORY.md for the latest changes.
 ## Installation
 ### Download files
 
-To download the files of this repository click on "Code" and select "Download ZIP". In the ZIP you will find the fils "stable-horde-i2i.py", "stable-horde-ip.py", "stable-horde-t2i.py" ,"stable-horde-upscaler.py" and api.key in the subfolder "stablehorde". This is the code for the GIMP plugin. Add your API key to the file "api.key". If you do not have an api key, you can get one for free @ https://stablehorde.net/register .
+To download the files of this repository click on "Code" and select "Download ZIP". In the ZIP you will find the fils "stable-horde-i2i.py", "stable-horde-ip.py", "stable-horde-t2i.py" ,"stable-horde-upscaler.py" and api.key in the subfolder "stablehorde". This is the code for the GIMP plugin. Add your API key to the file "api.key". If you do not have an api key, you can get one for free @ https://stablehorde.net/register.
+The "api.key" file must contain just the key value without no `key=` or `apikey=` prefix.
 
 ### GIMP
 
@@ -15,7 +16,7 @@ To run the plugin GIMP 2.10 is needed.
 
 1. Start GIMP and open the preferences dialog via "edit/preferences" and scroll down to "folders". Expand "folders" and click on "plug-ins". Select the folder which includes your username and copy the path. 
 
-2. Open the file explorer, navigate to this directory and copy the file "gimp-stable-diffusion.py" from the repository into this directory. If you are on MacOS or Linux, change the file permissions to 755.
+2. Enter the repository "stablehorde" directory and copy all the internal files to root of the Gimp's "plug-ins" directory. If you are on MacOS or Linux, change the file permissions to 755.
 
 3. Restart GIMP. You should now see the new menu "AI". If you don't see this, something went wrong. Please check in this case "Troubleshooting/GIMP" for possible solutions. The menu has one item "Stablehorde". This item can't currently be selected. This only works, when you opened an image before. More about this below.
 
